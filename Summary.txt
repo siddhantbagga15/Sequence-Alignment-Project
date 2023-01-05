@@ -1,0 +1,21 @@
+Observations and Insights:
+
+Memory Usage vs Problem size : We can observe from "MemoryPlot.png" graph that the memory consumed by the basic program increases significantly when the problem size increases. For large problem sizes, the memory consumed is comprehensively more than the efficient version. In contrast, the memory consumed by the efficient version is almost a flat (constant) line which proves the efficiency of the Divide and Conquer approach. This is because the basic version has a space complexity of O(m * n) whereas the efficient version's space complexity is O(m + n). The difference in space complexities is quite evident and reflects in the graph. The efficient version computes the mismatch penalty
+by using a matrix of size (m * 2) and uses Divide and Conquer approach to generate alignments, which although increases the computation time but thoroughly reduces the memory usage. The basic version on the other hand straightaway allocates memory of (m * n). 
+
+CPU Time vs Problem Size : We can observe in the "CPUPlot.png" that the time taken by the efficient version is more than the basic version for all problem sizes. Efficient version roughly takes 2 * (time taken by the basic version). This is because of the recursive calls which increase the computation time of the efficient version.
+
+Contributions:
+
+The work was equally distributed amongst all the members. 
+
+Siddhant Bagga (USC ID - 4495959903): Code Design, Testing, Graph Plotting
+
+Priya Nayak (USC ID - 8004623162): Code Design, Testing, Graph Plotting
+
+Garima Rawat (USC ID - 2374092774): Code Design, Testing, Report Preparation
+
+
+
+
+
